@@ -1,5 +1,5 @@
 # ---- Build stage ----
-FROM eclipse-temurin:21-jdk-alpine AS builder
+FROM maven:3-eclipse-temurin-21-alpine AS builder
 WORKDIR /build
 
 # 先拉依赖层（利用 Docker 缓存）
